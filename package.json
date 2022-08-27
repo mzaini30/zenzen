@@ -3,5 +3,8 @@
 		"pug-cli": "1.0.0-alpha6",
 		"jstransformer-stylus": "^1.5.0",
 		"jstransformer-coffee": "^2.0.1"
+	},
+	"scripts": {
+		"build": "pug src/ -o static/"
 	}
 }
