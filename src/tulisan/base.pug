@@ -5,12 +5,8 @@ block head
   style
     :stylus
       h1
-        text-align center
+        text-align center 
 
 block body
   .p-3
     block isi
-  script
-    :coffee
-      judul = document.querySelector "h1"
-      document.title = judul.innerText
