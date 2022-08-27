@@ -1,0 +1,16 @@
+extends ../base.pug
+
+block head
+  +css("../bootstrap.min.css")
+  style
+    :stylus
+      h1
+        text-align center
+
+block body
+  .p-3
+    block isi
+  script
+    :coffee
+      judul = document.querySelector "h1"
+      document.title = judul.innerText

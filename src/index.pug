@@ -1,5 +1,8 @@
 extends base.pug
 
+mixin list(judul, link)
+  a.list-group-item.list-group-item-action(href=`tulisan/${link}.html`) #{judul}
+
 block head
   title Zen Zen
   +css("bootstrap.min.css")
@@ -7,3 +10,5 @@ block head
 block body
   .p-3
     h1.text-center Zen Zen
+    .list-group
+      +list("Balas dengan Karya", "balas-dengan-karya")
