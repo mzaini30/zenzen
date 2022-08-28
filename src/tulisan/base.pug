@@ -1,8 +1,5 @@
 extends ../base.pug
 
-mixin meta(judul)
-  title #{judul}
-
 block head
   +css("../bootstrap.min.css")
   style
@@ -15,3 +12,7 @@ block body
     block isi
     p.text-center
       a(href="../index.html") cd ..
+    script
+      :coffee
+        judul = document.querySelector "h1"
+        document.title = judul.innerText
