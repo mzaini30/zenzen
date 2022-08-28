@@ -5,6 +5,7 @@
 		"jstransformer-coffee": "^2.0.1"
 	},
 	"scripts": {
+	 "dev": "pug src/ -o static/ -w",
 		"build": "pug src/ -o static/"
 	}
 }
